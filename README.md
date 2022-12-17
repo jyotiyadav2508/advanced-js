@@ -1,6 +1,6 @@
 # Advanced Java Script Concepts
 
-
+-----Only for learning purpose-----
 ## ES6
  ECMAScript (ES) version 6 is a more modern form of JavaScript.
 
