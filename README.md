@@ -1,6 +1,5 @@
 # Advanced Java Script Concepts
 
-A brief description of advanced JS functions.
 
 ## ES6
  ECMAScript (ES) version 6 is a more modern form of JavaScript.
@@ -47,7 +46,7 @@ for more see rest.js
 ### Destructuring:
 
   - Allows us to easily turn an array or object into multiple variables by separating our variable names with commas.
-  - Destructuring gives us a faster way to take an array of items and turn those items into distinct, individual variables. Instead of referencing each element of the  array by its index and declaring each variable individually, we can use destructuring  to do it all on a single line of code.  
+  - Destructuring gives us a faster way to take an array of items and turn those items into distinct, individual variables. Instead of referencing each element of the  array by its index and declaring each variable individually, we can use destructuring  to do it all on a single line of code. The same is true for unpacking - or destructuring - the properties and values of JavaScript objects.    
 
 for more see destructring.js
 
@@ -58,17 +57,23 @@ for more see destructring.js
   - Map, filter and reduce are all designed to be able to accomplish the same things that can be accomplished with a for loop or a while loop, using less code. They are iterator methods, which basically means that they provide a nice, elegant way to iterate through an array of items and perform some action on each item.
 
 #### A callback function:
-A function which you want to execute on every element in the array.  
+In the context of these three methods, a callback function is simply a function that we pass as a parameter to the method, which will be called on every element of the array the method is operating on.  
 
 #### The map method:
-The map() method then iterates over the array,  calls this callback function on every element, and returns a new array containing  all the results of that process. 
+The map method is called on an array, and takes a single parameter, a callback function, which is a function you  want to execute on every element in the array. The map() method then iterates over the array, calls this callback function on every element, and returns a new array containing all the results of that process. 
+
+example in map.js
 
 #### The filter method:
-The second method is filter(). It iterates over an array of items, and filters the  array to only a specified set of results. If you had an array of numbers, you could use filter()  to filter the array down to only the even numbers. If you had an array of names, you could filter it to only those names that begin with a certain letter.
+The second method is filter(). It iterates over an array of items, and filters the  array to only a specified set of results. If you had an array of numbers, you could use filter() to filter the array down to only the even numbers. If you had an array of names, you could filter it to only those names that begin with a certain letter.
 Basically, the filter method is for  filtering an array. Like the map method, it does this by taking a callback function as a  parameter. Each item in the array will be passed into the callback function, and if the callback  function returns true when given that element, that element will be included in the results.  Otherwise, the element will be filtered out. When the filter method is complete, the result  is a new array containing the filtered results.
+
+example in filter.js
 
 #### The reduce method:
 It reduces all the elements of an array into a single output value, according to a callback function you provide. The simplest usage of this method might be if you wanted to reduce an array of numbers to their total sum. In this case, you would call the reduce() method on the array of numbers, and the callback function you pass as its parameter would serve the purpose of adding  each number to the last and keeping track of the total.
+
+example in reduce.js
 
 #### Summary:
 Map is used to execute a function on every element of an array and return a new array of the results, filter is used to filter unwanted elements out  of an array and return an array of only the elements you want, and reduce is used to reduce  all elements of an array to a singular value.

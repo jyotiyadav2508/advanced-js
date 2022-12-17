@@ -1,31 +1,33 @@
 // ---------------------------------Using a for loop----------*
-let nums = [1, 2, 3, 4, 5];
+let nums1 = [1, 2, 3, 4, 5];
 let result = [];
-for (let num of nums) {
+for (let num of nums1) {
     result.push(num * 2);
 }
 console.log(result)
 
 
-//-----------------------------------------Using map method----*
+//--------------------------------------------------Using map method----*
+let nums2 = [1, 2, 3, 4, 5];
 const multiByTwo = function(num) {
     return num * 2;
 }
-const mapResult = nums.map(multiByTwo);
+const mapResult = nums2.map(multiByTwo);
 console.log(mapResult)
 
 
-//--------------------------------------Simplified map()-----*
-const simplified = nums.map(function(num) {
+//--------------------------------------------------Simplified map()-----*
+let nums3 = [1, 2, 3, 4, 5];
+const simplified = nums3.map(function(num) {
     return num * 2
 })
 console.log(simplified)
 
 
 
-//----------------------------Simplified map() + Arrow function---*
-
-const arrow = nums.map(num => num * 2)
+//------------------------------------Simplified map() + Arrow function---*
+let nums4 = [1, 2, 3, 4, 5];
+const arrow = nums4.map(num => num * 2)
 console.log(arrow)
 
 
